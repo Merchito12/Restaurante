@@ -1,0 +1,433 @@
+* {
+    background-color: rgb(234, 234, 234);
+    font-family: 'Tenor Sans', sans-serif;
+    overflow: hidden;
+}
+.input-control{
+    height: 35px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #983434;
+}.input-control-incorrecto {
+    height: 35px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+ /*    border: 1px solid rgb(114, 20, 20);
+    border-radius: 0.2rem; */
+    color : rgb(202, 82, 82);
+    border-bottom: 1px solid #983434;
+
+}
+
+form button {
+    height: 35px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin-top: 20px;
+    user-select: none;
+    background: linear-gradient(to right, rgb(173, 113, 67), #532424);
+    border: none;
+    color: rgb(255, 255, 255);
+}
+.input-control:focus {
+    outline: none;
+}
+.input-control-incorrecto:focus {
+    outline: none;
+}
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+align-items: center;
+
+}
+.gradient-text {
+    background: linear-gradient(to right, rgb(173, 113, 67), #532424);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.form {
+    /* #532424 */
+    background-color: transparent;
+    border-radius: 2rem;
+   /*  margin-left: 15%; */
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    grid-gap: 1rem;
+    border: 1px solid rgb(0, 0, 0);
+     margin-top: 10vh; 
+}
+
+section {
+    margin-top: 10vh; 
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2rem;
+  /*   margin-left: 10%; */
+    padding: 2rem;
+    text-align: center;
+
+}
+html,body{
+    height: 100vh;
+}
+.menu {
+    background-color: rgb(0, 0, 0);
+    height: 5rem;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+
+    border: solid 2px rgb(192, 118, 89);
+}
+
+.menu h2 {
+    color: rgb(249, 230, 219);
+    font-size: 1.5rem;
+}
+.menu #inicio {
+    color: #a85c22;
+    background-color: transparent;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.categoria {
+    font-size: 1rem;
+    color: #d6cdbc;
+    background-color: transparent;
+    text-decoration: none;
+
+}
+
+
+
+.menu a:hover {
+    transition: 0.3s;
+    color: rgb(173, 113, 67);
+}
+
+#logo {
+    margin-left: 3rem;
+  height: 40px;
+  width: 200px;
+
+}
+footer{
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+   opacity: 50%;
+   border-top: 1px solid #983434; 
+   display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+footer i{
+    background-color: transparent;
+    font-size: 1.5rem;
+
+}
+
+#mensaje{
+    margin-top: 1rem;
+    color: rgb(25, 24, 24);
+    background-color:transparent;
+    border-radius: 2rem;
+    
+    
+}
+
+/* body{
+    overflow: hidden;
+    background-color: rgb(251, 251, 251);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;    
+}
+h3{
+   
+    text-align: center;
+    color: black;
+
+}
+.burbuja{
+    width: 80px;
+    height: 80px;
+    background:linear-gradient(to right,rgb(52, 17, 17),rgb(125, 50, 50) );
+    border-radius: 50%;
+    opacity: .3;
+
+    position:absolute ;
+    bottom: 25%;
+    left: -200px;
+    animation: burbujas 3s linear infinite ;
+}
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    70%{
+        
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+.burbuja2{
+    width: 40px;
+    height: 40px;
+    background:linear-gradient(to right,rgb(52, 17, 17),rgb(125, 50, 50) );
+    border-radius: 50%;
+    opacity: .3;
+
+    position:absolute ;
+    bottom: 25%;
+    left: 800px;
+    animation: burbujas 5s linear infinite ;
+}
+.burbuja3{
+    width: 100px;
+    height: 100px;
+    background:linear-gradient(to right,rgb(52, 17, 17),rgb(125, 50, 50) );
+    border-radius: 50%;
+    opacity: .3;
+z-index: -2;
+    position:absolute ;
+    bottom: 25%;
+    left: 200px;
+    animation: burbujas 2s linear infinite ;
+}
+
+.burbuja4{
+    width: 40px;
+    height: 40px;
+    background:linear-gradient(to right,rgb(52, 17, 17),rgb(125, 50, 50) );
+    border-radius: 50%;
+    opacity: .3;
+
+    position:absolute ;
+    bottom: 25%;
+    left: 1000px;
+    animation: burbujas 3s linear infinite ;
+}
+
+
+  
+
+.h3{
+    color: rgb(0, 0, 0);
+   
+}
+.form-main{
+    min-height: 100vh;
+    padding: 60px 15px;
+    display: flex;
+    align-items: right;
+   margin-left: 20%;
+   margin-top: 100px;
+
+}
+.form-content .box{
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(234, 234, 234);
+
+    border: 1px solid rgb(0, 0, 0);
+    padding: 40px 50px;
+    border-radius: 20px;
+    backdrop-filter: rgb(0, 0, 0);
+
+    display: fixed;
+}
+.form-content{
+    width: 100%;
+max-width: 450px;
+position: relative;
+z-index: 1;
+display: fixed;
+}
+.form-content .circle-1,
+.form-content .circle-2,
+.form-content .circle-3{
+    position: absolute;
+    background:linear-gradient(to right,rgb(52, 17, 17),rgb(125, 50, 50) );
+border-radius: 50%;
+z-index: 1;
+
+}
+.form-content .circle-1{
+    height: 120px;
+    width: 120px;
+    left: 0;
+    top: 10%;
+    transform: translateX(-60%);
+    
+}
+.form-content .circle-2{
+    height: 80px;
+    width: 80px;
+    right: -120%;
+   top: 50%;
+    bottom: 0;
+    transform: translate(20%, 20%);
+ 
+}
+.form-content .circle-3{
+    height: 50px;
+    width: 50px;
+    right:10%;
+    top: 10%;
+  
+
+}
+
+.form-content h3{
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.2;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.form-content form{
+    margin: 25px 0 20px;
+}
+.form-content .imput-box{
+    margin-bottom: 25px;
+}
+.form-content .input-control{
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+.form-content .input-control:focus{
+    outline: none;
+}
+.form-content .imput-link{
+    margin-top: 10px;
+    text-align: right;
+}
+.form-content .boton{
+    height: 45px;
+    width: 100%;
+    font-weight: 500;
+    text-transform: capitalize;
+   cursor: pointer;
+   border-radius: 25px;
+   margin-top: 20px;
+   user-select: none;
+   background: linear-gradient(to right,rgb(224, 215, 88),rgb(83, 82, 46) );
+   border: none;
+   color: rgb(255, 255, 255);
+   position: relative;
+   overflow: hidden;
+   font-size: 20px;
+   z-index: 1;
+
+}
+p{
+    color: rgb(0, 0, 0);
+    font-family:'Tenor Sans';
+
+}
+
+.form-content  .boton::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.5s ease;
+    z-index: 10;
+}
+.form-content .boton:hover::before{
+    background-color:  rgba(34, 34, 25, 0.729);
+}
+.form-content p{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    font-weight: 500;
+ 
+    font-family: 'Tenor Sans';
+}
+.gradient-text{
+    background: linear-gradient(to right,rgb(224, 215, 88),rgb(83, 82, 46) );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.logo{
+    background-color:transparent;
+    width: 350px;
+    height: 300px;
+    margin-left: 620px;
+    margin-top: -425px;
+}
+.log{
+    width: 350px;
+    height: 300px;
+}
+.eslogan{
+    background:linear-gradient(to right,rgb(224, 215, 88),rgb(83, 82, 46) );
+    
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: 350px;
+    height: 100px;
+    margin-left: 600px;
+    margin-top: -200px;
+    font-size: 25px;
+}
+.termino{
+ margin-left: 100px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+@media(max-width: 575px){
+    body::after
+    body::before{
+    height: 250px;
+    width: 250px;
+    filter: blur(100px);
+
+    
+    }
+
+}
+
+h4{
+    font-family: 'Tenor Sans', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+h5{
+    text-align: center;
+    color: black;
+
+    margin-top: -20px;
+    font-family: 'Tenor Sans', sans-serif;
+}
+.Crear{
+    color: aliceblue;
+} */

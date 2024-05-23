@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tenor Sans", sans-serif;
+    background-color: rgb(234, 234, 234);
+    font-size: 1rem;
+
+}
+
+body {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    background-color: black;
+}
+
+li {
+    margin-top: 1rem;
+    background-color: black;
+}
+
+body {
+    background-color: rgb(234, 234, 234);
+
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.sidebar {
+    width: 256px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: rgb(0, 0, 0);
+    color: #d6cdbc;
+    border: solid 2px rgb(192, 118, 89);
+
+}
+
+.sidebar header {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f6f6f6;
+    background-color: transparent;
+}
+
+.user-img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.user-img img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.user-details {
+    background-color: transparent;
+}
+
+.user-details .tittle {
+    font-size: 10px;
+    font-weight: 500;
+    color: #757575;
+    text-transform: uppercase;
+    background-color: transparent;
+
+}
+
+.user-details .name {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: transparent;
+
+}
+
+section {
+    background-color: rgb(234, 234, 234);
+    height: 100vh;
+    width: 100%;
+
+}
+
+.links span,
+i,
+a {
+    background-color: transparent;
+    color: #d6cdbc;
+}
+
+nav {
+    background-color: transparent;
+}
+
+.cuenta span {
+    background-color: transparent;
+
+}
+
+.cuenta {
+
+    padding: 0.5rem;
+    border-radius: 2rem;
+
+
+}
+
+.cuentap {
+    font-size: 10px;
+    font-weight: 500;
+    color: #757575;
+
+    background-color: transparent;
+    border-bottom: solid 1px white;
+
+    margin-top: 350px;
+}
+
+.links {
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.links:hover {
+    transition: 1s;
+    background-color: #757575;
+    border-radius: 2rem;
+    translate: 1rem;
+}
+
+.cuenta:hover {
+    transition: 1s;
+    background-color: #757575;
+    border-radius: 2rem;
+    translate: 1rem;
+}
+
+section {
+    padding: 40px;
+    background-color: rgb(234, 234, 234);
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    background-color: transparent;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+table th {
+    background-color: #313030;
+    color: white;
+    border-top: 1px solid #4CAF50;
+    align-items: center;
+}
+
+table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Estilos para las filas alternas */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para los botones de acción */
+button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* button a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+ */
+
+
+button .edit-btn:hover {
+    background-color: #45a049;
+}
+
+button.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+button .delete-btn:hover {
+    background-color: #da190b;
+}
+
+tbody {
+
+    overflow-y: auto;
+}
+
+.entregado {
+    background-color: #cde5ce;
+}
+
+.pendiente {
+    background-color: #dfb2b2;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.botones button {
+    border-radius: 2rem;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+
+    border: solid 0.2px black;
+
+}
+
+#btn-e:hover {
+    transition: 0.5s;
+    background-color: #45a049;
+    translate: -2px;
+    cursor: pointer;
+
+}
+
+#btn-p:hover {
+    transition: 0.5s;
+    translate: -2px;
+    cursor: pointer;
+
+    background-color: #f44336;
+}
+
+td button {
+    background-color: transparent;
+    border: none;
+
+}
+
+td button:hover {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+
+}.estado:hover{
+background-color: #45a049;
+
+}

@@ -1,0 +1,342 @@
+
+body {
+    overflow: hidden;
+    background-color: rgb(234, 234, 234);
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 1rem;
+}
+#logo{
+  margin-left: 3rem;
+  height: 40px;
+  width: 200px;
+}
+.menu {
+    background-color: rgb(0, 0, 0);
+    height: 5rem;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+
+    border: solid 2px rgb(192, 118, 89);
+}
+
+.menu a{
+    color: #d6cdbc;
+    text-decoration: none;
+}
+.menu input {
+    height: 2rem;
+    width: 50%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+.categoria{
+   font-size: 1rem;
+    color: #d6cdbc;
+}
+.menu button {
+    margin-left: 2rem;
+    font-size: 1rem;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    border: none;
+}.menu button:hover {
+transition: 0.3s;
+   color: rgb(173, 113, 67);
+}
+main {
+    display: flex;
+    gap: 2%;
+    margin-left: 0.5rem;
+}
+img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1rem;
+    border: solid 1px;
+}
+.loader {
+    display: none;
+}
+span {
+    font-size: 1rem;
+    color: rgb(132, 71, 46);
+}
+.Food {
+    text-align: center;
+    background-color: transparent;
+    border-radius: 2rem;
+    border: solid 1px rgb(0, 0, 0);
+    margin-top: 1rem;
+    margin-left: 2%;
+    padding: 1rem;
+    height: 150vh;
+    width: 70%;
+}
+.Food h1{
+    font-size: 1.5rem;
+    
+}
+.favoritos {
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: solid 1px rgb(149, 80, 38);
+    width: 20%;
+    margin-top: 1rem;
+}
+#favs {
+    overflow-y: scroll;
+    height: 68vh;
+    max-height: 100%;
+    border-radius: 2rem;
+}
+#favoritos img {
+    width: 8rem;
+    height: 8rem;
+}
+#favoritos article {
+    min-width: auto;
+    max-width: 100%;
+    height: auto;
+}
+#favoritos article button {
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    margin-top: 80%;
+
+}
+button {
+    font-size: 1rem;
+    border-radius: 2rem;
+}
+ul {
+    background-color: rgb(234, 234, 234);
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+h4{
+    font-size: 1rem;
+}
+.dropbtn {
+    background-color: #000000;
+    color: #d6cdbc;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 1rem;
+  }
+  
+  /* Estilos para el contenedor del menú desplegable */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Estilos para el contenido del menú desplegable */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    z-index: 1;
+    border-radius: 1rem;
+    padding-top:  1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    
+  }
+  
+  /* Mostrar el menú desplegable al hacer hover sobre el botón */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.btnagregar {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0%;
+    background-color: rgb(132, 71, 46);
+   
+}
+
+#eliminar {
+    font-size: 1rem;
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+h1 {
+    font-size: 1rem;
+    color: rgb(132, 71, 46);
+    font-family: "Tenor Sans", sans-serif;
+}
+
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+.Food {
+    font-size: 1rem;
+}
+
+#foodlList {
+    overflow-y: scroll;
+    max-height: 50%;
+    border-radius: 2rem;
+    margin-top: -0.8rem;
+}
+
+.Food ul {
+
+    grid-column: span 3;
+}
+/* Estilos del formulario */
+
+article{
+    background-color: rgb(234, 234, 234);
+padding: 1rem;
+margin-top: 1rem;
+border-radius: 2rem;
+margin-left: 2rem;
+border: solid 1px rgb(185, 170, 161);
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+#Titulo-form
+{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    color: rgb(241, 182, 153);
+}
+.caja-form{
+    background-color: rgb(234, 234, 234);
+    height: 80vh;
+    width: 70%;
+    margin-left: 1%;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    border: solid 1px rgb(0, 0, 0);
+}
+.formularito
+{
+    
+background-color: transparent;
+    padding: 40px 0;/*padding de 40px arriba y abajo y 0 a los lados*/
+    border-radius: 2rem;
+    border: solid 1px;
+    margin-top: 5%;
+    margin-left: 30%;
+    height: 60%;
+    width: 40%;
+  
+
+}
+form{
+width: 100%;
+min-width: 100%;
+
+
+
+   
+}
+form .grupo
+{
+    position: relative;
+    
+    margin-left: 2rem;
+}
+.input
+{
+    background: none;
+    color: #e9d9be;
+    font-size: 1rem;
+    padding: 10px 10px 10px 5px;
+    display: block;/*pone los elemtos uno debajo del otro*/
+    width: 80%;
+    border: none;
+    
+    border-bottom: 2px solid rgb(226, 161, 32);/*la linea de abajo*/
+}
+input:focus/*Cuando el cursor este sobre los inputs*/
+{
+    outline: none;
+    color: rgb(183, 154, 154);
+}
+label
+{
+    color: black;
+    font-size:1rem;
+}
+form #send
+{
+    display: block;
+    
+    background: linear-gradient(
+        to right,
+        #c49f61, 
+        #d28e5a
+    );
+    padding: 10px;
+    font-size: 1rem;
+    color: rgb(57, 43, 24);
+    border: none;
+    border-bottom: none;
+    border-radius: 10px;
+    width: 80%;
+    margin: 2rem auto;
+    height: 50px;
+}
+ #casita
+{
+    color: rgb(57, 41, 28);
+   font-size: 1rem;
+   margin-left: 2rem;
+   margin-top: 2rem;
+  
+  
+
+}
+#result{
+    font-size: 1rem;
+
+}
+#produs{
+
+font-size: 1rem;
+width: 80%;
+}
+p{
+    font-size: 1rem;
+}
+@media screen 
+{
+    @media(min-width:600px)
+    {
+        form
+        {
+            width: 500px;
+            height: 600px;
+        }
+    }   
+}
+
+*{
+    font-family: "Tenor Sans", sans-serif;
+
+}
